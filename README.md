@@ -78,10 +78,6 @@ This app can be deployed to platforms supporting Python Flask apps, such as Verc
 - Voice recognition uses the browser's Web Speech API (webkitSpeechRecognition).
 - Text-to-speech uses the browser's SpeechSynthesis API.
 
-## License
-
-MIT License
-
 ## Acknowledgments
 
 - Powered by Gemini API &mdash; [Google AI](https://ai.google.dev/)

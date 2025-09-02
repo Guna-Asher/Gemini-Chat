@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gemini Chat</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container glass">
+        <h1><span class="gemini-logo">✦</span> Gemini Chat</h1>
+        <div id="chat-window" class="chat-window"></div>
+        <div id="typing-indicator" class="typing-indicator" style="display:none;">
+            <span class="avatar gemini-avatar">🤖</span>
+            <span class="typing-text">Gemini is typing<span class="dot one">.</span><span class="dot two">.</span><span class="dot three">.</span></span>
+        </div>
+        <div class="input-area">
+            <input type="password" id="api-key" placeholder="Gemini API Key" autocomplete="off" />
+            <input type="text" id="user-input" placeholder="Type your message or use voice" autocomplete="off" />
+            <button id="send-btn" title="Send">➤</button>
+            <button id="voice-btn" title="Speak" aria-label="Speak">🎤</button>
+            <button id="stop-btn" title="Stop" aria-label="Stop">⏹️</button>
+        </div>
+        <div class="tips">
+            <b>Tips:</b> Press <kbd>Enter</kbd> to send, <kbd>🎤</kbd> for voice, <kbd>⏹️</kbd> to stop. Responses are context-aware!
+        </div>
+    </div>
+    <footer>
+        <span>Powered by Gemini API &mdash; <a href="https://ai.google.dev/" target="_blank">Google AI</a></span>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
